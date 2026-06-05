@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gabriel Botelho — Dev Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400&family=Syne:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- Cursor personalizado -->
+    <div class="cursor"></div>
+    <div class="cursor-trail"></div>
+
+    <!-- Partículas de fundo -->
+    <canvas id="bg-canvas"></canvas>
+
+    <header id="header">
+        <div class="header-inner">
+            <div class="logo">GB<span class="logo-dot">.</span></div>
+            <nav>
+                <ul>
+                    <li><a href="#sobre-mim"><span class="nav-num">01</span> Sobre</a></li>
+                    <li><a href="#formacao"><span class="nav-num">02</span> Formação</a></li>
+                    <li><a href="#portfolio"><span class="nav-num">03</span> Projetos</a></li>
+                    <li><a href="#contato"><span class="nav-num">04</span> Contato</a></li>
+                </ul>
+            </nav>
+            <div class="header-status">
+                <span class="status-dot"></span>
+                <span>Disponível para oportunidades</span>
+            </div>
+        </div>
+    </header>
+
+    <main>
+
+        <!-- HERO -->
+        <section id="sobre-mim" class="hero-section">
+            <div class="hero-content">
+                <div class="hero-tag">
+                    <span class="tag-bracket">[</span>
+                    Software Developer
+                    <span class="tag-bracket">]</span>
+                </div>
+                <h1 class="hero-title">
+                    <span class="hero-line" data-text="Gabriel">Gabriel</span>
+                    <span class="hero-line accent" data-text="Botelho">Botelho</span>
+                </h1>
+                <div class="hero-skills">
+                    <span class="skill-chip">Java</span>
+                    <span class="divider">/</span>
+                    <span class="skill-chip">Python</span>
+                    <span class="divider">/</span>
+                    <span class="skill-chip">Web Dev</span>
+                </div>
+                <p class="hero-bio">
+                    Entusiasta de tecnologia focado em Java e Python. 
+                    Em jornada constante do iniciante ao desenvolvedor júnior, 
+                    construindo sistemas e soluções que importam.
+                </p>
+                <div class="hero-cta">
+                    <a href="#portfolio" class="btn-primary">Ver Projetos <span class="arrow">→</span></a>
+                    <a href="#contato" class="btn-ghost">Entrar em contato</a>
+                </div>
+            </div>
+            <div class="hero-visual">
+                <div class="code-window">
+                    <div class="window-bar">
+                        <span class="dot red"></span>
+                        <span class="dot yellow"></span>
+                        <span class="dot green"></span>
+                        <span class="window-title">gabriel.java</span>
+                    </div>
+                    <pre class="code-block"><code><span class="kw">public class</span> <span class="cls">Gabriel</span> {
+
+  <span class="kw">private</span> String nome = <span class="str">"Gabriel Botelho"</span>;
+  <span class="kw">private</span> String[] skills = {
+    <span class="str">"Java"</span>, <span class="str">"Python"</span>, <span class="str">"Web"</span>
+  };
+
+  <span class="kw">public</span> String getStatus() {
+    <span class="kw">return</span> <span class="str">"Aprendendo sempre"</span>;
+  }
+
+  <span class="kw">public boolean</span> isAvailable() {
+    <span class="kw">return true</span>; <span class="comment">// sempre :)</span>
+  }
+
+}</code></pre>
+                </div>
+                <div class="floating-badge badge-1">
+                    <span class="badge-icon">☕</span> Java
+                </div>
+                <div class="floating-badge badge-2">
+                    <span class="badge-icon">🐍</span> Python
+                </div>
+                <div class="floating-badge badge-3">
+                    <span class="badge-icon">🎓</span> UNINTER
+                </div>
+            </div>
+        </section>
+
+        <!-- FORMAÇÃO -->
+        <section id="formacao">
+            <div class="section-header">
+                <span class="section-num">02</span>
+                <h2>Formação</h2>
+                <div class="section-line"></div>
+            </div>
+
+            <div class="formacao-layout">
+                <div class="formacao-card">
+                    <div class="card-glow"></div>
+                    <div class="card-header-row">
+                        <div class="uni-badge">ESW</div>
+                        <span class="status-pill">Cursando</span>
+                    </div>
+                    <h3>Engenharia de Software</h3>
+                    <p class="uni-name">Centro Universitário Internacional — UNINTER</p>
+                    <div class="formacao-tags">
+                        <span>Sistemas de Informação</span>
+                        <span>Banco de Dados</span>
+                        <span>Lógica de Programação</span>
+                        <span>Engenharia de Sistemas</span>
+                    </div>
+                </div>
+
+                <div class="skills-grid">
+                    <div class="skill-bar-item">
+                        <div class="skill-header">
+                            <span>Java</span><span>Aprendendo</span>
+                        </div>
+                        <div class="skill-bar"><div class="skill-fill" style="--w:55%"></div></div>
+                    </div>
+                    <div class="skill-bar-item">
+                        <div class="skill-header">
+                            <span>Python</span><span>Aprendendo</span>
+                        </div>
+                        <div class="skill-bar"><div class="skill-fill" style="--w:50%"></div></div>
+                    </div>
+                    <div class="skill-bar-item">
+                        <div class="skill-header">
+                            <span>HTML/CSS</span><span>Intermediário</span>
+                        </div>
+                        <div class="skill-bar"><div class="skill-fill" style="--w:65%"></div></div>
+                    </div>
+                    <div class="skill-bar-item">
+                        <div class="skill-header">
+                            <span>JavaScript</span><span>Iniciando</span>
+                        </div>
+                        <div class="skill-bar"><div class="skill-fill" style="--w:35%"></div></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- PROJETOS -->
+        <section id="portfolio">
+            <div class="section-header">
+                <span class="section-num">03</span>
+                <h2>Projetos</h2>
+                <div class="section-line"></div>
+            </div>
+
+            <div class="projetos-grid">
+
+                <div class="projeto-card">
+                    <div class="projeto-header">
+                        <div class="projeto-icon">☕</div>
+                        <div class="projeto-links">
+                            <a href="https://github.com/GabrielBotelho-DEV/cafemelaromasite" target="_blank" class="gh-link" title="Ver no GitHub">
+                                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>
+                                GitHub
+                            </a>
+                        </div>
+                    </div>
+                    <h3>Café Melaroma — Site</h3>
+                    <p>Site completo para a cafeteria Melaroma, com design atraente e foco na experiência do usuário. Desenvolvimento front-end com HTML, CSS e JavaScript.</p>
+                    <div class="projeto-tech">
+                        <span>HTML</span>
+                        <span>CSS</span>
+                        <span>JavaScript</span>
+                    </div>
+                    <a href="https://github.com/GabrielBotelho-DEV/cafemelaromasite" target="_blank" class="btn-projeto">
+                        Ver Projeto <span>→</span>
+                    </a>
+                </div>
+
+                <div class="projeto-card">
+                    <div class="projeto-header">
+                        <div class="projeto-icon">📣</div>
+                        <div class="projeto-links">
+                            <a href="https://github.com/GabrielBotelho-DEV/pre-landing-marketingmelaroma" target="_blank" class="gh-link" title="Ver no GitHub">
+                                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>
+                                GitHub
+                            </a>
+                        </div>
+                    </div>
+                    <h3>Melaroma — Pré-Landing Marketing</h3>
+                    <p>Página de pré-lançamento com estratégia de marketing digital para a marca Melaroma. Captação de leads e geração de expectativa antes do lançamento oficial.</p>
+                    <div class="projeto-tech">
+                        <span>HTML</span>
+                        <span>CSS</span>
+                        <span>Marketing</span>
+                    </div>
+                    <a href="https://github.com/GabrielBotelho-DEV/pre-landing-marketingmelaroma" target="_blank" class="btn-projeto">
+                        Ver Projeto <span>→</span>
+                    </a>
+                </div>
+
+            </div>
+
+            <div class="github-cta">
+                <a href="https://github.com/GabrielBotelho-DEV" target="_blank" class="github-full-btn">
+                    <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>
+                    Ver todos os repositórios no GitHub
+                </a>
+            </div>
+        </section>
+
+        <!-- CONTATO -->
+        <section id="contato">
+            <div class="section-header">
+                <span class="section-num">04</span>
+                <h2>Contato</h2>
+                <div class="section-line"></div>
+            </div>
+
+            <div class="contato-layout">
+                <div class="contato-info">
+                    <p class="contato-intro">Moro na região de <strong>Poços de Caldas — MG</strong>.<br>Aberto a oportunidades e colaborações!</p>
+                    <div class="contato-links">
+                        <a href="https://github.com/GabrielBotelho-DEV" target="_blank" class="contato-link">
+                            <span class="link-icon">
+                                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>
+                            </span>
+                            GabrielBotelho-DEV
+                        </a>
+                    </div>
+                </div>
+
+                <form id="meu-formulario">
+                    <div class="campo">
+                        <label for="nome">Nome</label>
+                        <input type="text" id="nome" name="nome" placeholder="Seu nome" required>
+                    </div>
+                    <div class="campo">
+                        <label for="email">E-mail</label>
+                        <input type="email" id="email" name="email" placeholder="seu@email.com" required>
+                    </div>
+                    <div class="campo">
+                        <label for="mensagem">Mensagem</label>
+                        <textarea id="mensagem" name="mensagem" rows="4" placeholder="Sua mensagem aqui..." required></textarea>
+                    </div>
+                    <button type="submit">
+                        <span>Enviar Mensagem</span>
+                        <span class="btn-arrow">→</span>
+                    </button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-inner">
+            <div class="footer-logo">GB<span class="logo-dot">.</span></div>
+            <p>© 2026 Gabriel Botelho Borges Carvalho</p>
+            <a href="https://github.com/GabrielBotelho-DEV" target="_blank" class="footer-gh">GitHub ↗</a>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
